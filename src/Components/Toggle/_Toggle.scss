@@ -1,0 +1,61 @@
+@import "src/var";
+
+.switch {
+  display: inline-block;
+  height: 28px;
+  position: relative;
+  width: 55px;
+  vertical-align: middle;
+
+  input {
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
+
+  .slider {
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg,dodgerblue,green);
+    position: absolute;
+    top: 0;
+    transition: .4s;
+    -webkit-transition: .4s;
+
+    &:before {
+      background-color: white;
+      bottom: 4px;
+      content: "";
+      height: 20px;
+      left: 4px;
+      position: absolute;
+      transition: .4s;
+      -webkit-transition: .4s;
+      width: 20px;
+    }
+  }
+
+  .round {
+    border-radius: 34px;
+
+    &:before {
+      border-radius: 50%;
+    }
+  }
+
+  input:checked + .slider {
+    background: $light-theme-toggle;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px $dark-theme-toggle;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(26px);
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+  }
+}

@@ -1,0 +1,52 @@
+@import "src/var";
+
+.card {
+  padding: 30px 33px;
+  background: $dark-desaturated-blue-card-bg;
+
+  ul{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    .li-text {
+      color: $desaturated-blue-text;
+      font-size: 14px;
+    }
+
+    .li-social {
+      color: $desaturated-blue-text;
+      text-align: end;
+    }
+
+    .li-following {
+      color: $white-text;
+      font-size: 24px;
+      font-weight: $font-bold;
+    }
+
+    .li-stat {
+      color: $lime-green;
+      font-size: 12px;
+      font-weight: $font-bold;
+      margin-top: 7px;
+      text-align: end;
+    }
+
+    .li-stat-bright-red {
+      color: $bright-red;
+      font-size: 12px;
+      font-weight: $font-bold;
+      margin-top: 7px;
+      text-align: end;
+    }
+
+    svg {
+      vertical-align: middle;
+    }
+  }
+}

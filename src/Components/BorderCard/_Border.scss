@@ -1,0 +1,70 @@
+@import "src/var";
+
+.border_card {
+  padding: 30px 33px;
+  background: $dark-desaturated-blue-card-bg;
+
+  &.facebook {
+    border-top: 4px solid $facebook;
+  }
+
+  &.instagram {
+    border-top: 4px solid $instagram;
+  }
+
+  &.twitter {
+    border-top: 4px solid $twitter;
+  }
+
+  &.youtube {
+    border-top: 4px solid $youTube;
+  }
+
+  &__title {
+    color: $desaturated-blue-text;
+    font-size: 14px;
+
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      .li-social-media {
+        margin-bottom: 20px;
+
+        svg {
+          margin-right: 6px;
+        }
+      }
+
+      .li-followers {
+        color: $white-text;
+        font-size: 30px;
+        font-weight: $font-bold;
+      }
+
+      .li-followers-txt {
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+
+      .li-today {
+        color: $lime-green;
+        font-size: 13px;
+        font-weight: $font-bold;
+      }
+
+      .li-today-bright-red {
+        color: $bright-red;
+        font-size: 13px;
+        font-weight: $font-bold;
+      }
+
+      svg {
+        vertical-align: middle;
+      }
+    }
+  }
+}
