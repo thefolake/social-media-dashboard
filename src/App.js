@@ -22,7 +22,7 @@ function App() {
               <h1>Social Media Dashboard</h1>
               <div className="header">
                   <p>Total Followers : 21,389</p>
-                  <div>
+                  <div className='toggle-holder'>
                       <p className='dark-mode'> Dark Mode </p>
                       <Toogle click_event={toggleMode}/>
                   </div>
@@ -46,7 +46,6 @@ function App() {
                   <Card infoText="Total Views" social={<YouTube/>} following="1407" stat="12%" brightRed icon={<IconDown/>}/>
               </div>
           </div>
-
       </Fragment>
   );
 }
